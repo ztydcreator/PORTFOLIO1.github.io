@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic portfolio and student planner of Your Name.">
+  <title>Planner | Your Name</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-bar">
+      <a class="brand" href="index.html">Your Name</a>
+      <nav aria-label="Main navigation">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" aria-current="page">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Academic planner</h1>
+    <p>Add your assignments, readings and deadlines. Tasks are saved in this browser, so they will still be here when you come back.</p>
+
+    <form class="planner-form" id="taskForm">
+      <label for="taskInput" class="visually-hidden">New task</label>
+      <input type="text" id="taskInput" placeholder="e.g. Finish HTML assignment" autocomplete="off">
+      <button type="submit" class="btn">Add task</button>
+    </form>
+    <p class="error" id="taskError" role="alert"></p>
+
+    <div class="planner-meta">
+      <span id="counter">0 tasks</span>
+      <button type="button" class="btn secondary" id="clearDone">Clear completed</button>
+    </div>
+
+    <ul id="taskList" aria-live="polite"></ul>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Collins. Built with HTML, CSS and JavaScript.</p>
+  </footer>
+  <script src="js/planner.js"></script>
+</body>
+</html>
